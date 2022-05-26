@@ -15,9 +15,11 @@ $ npm install vuepress-plugin-code-switcher --save
 After installing, add it to your Vuepress configuration's plugin list:
 
 ```js
+import { codeSwitcherPlugin } from 'vuepress-plugin-code-switcher'
+
 module.exports = {
     // Your remaining configuration ...
-    plugins: [ 'code-switcher' ],
+    plugins: [ codeSwitcherPlugin() ],
 }
 ```
 

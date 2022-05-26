@@ -1,0 +1,26 @@
+:root {
+    --code-switcher-border-color: #3eaf7c;
+    --code-switcher-accent-color: #3eaf7c;
+}
+
+.code-switcher div[class*="language-"]::before {
+    content: "";
+}
+.code-switcher .tab-header ul {
+    padding: 0;
+    text-align: right;
+    margin-bottom: -5px;
+    margin-top: 20px;
+}
+.code-switcher .tab-header li {
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid var(--code-switcher-border-color);
+    margin-left: 5px;
+    font-size: 80%;
+}
+.code-switcher .tab-header li.active {
+    border-color: var(--code-switcher-accent-color);
+}
